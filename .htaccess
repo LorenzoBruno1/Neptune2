@@ -1,0 +1,7 @@
+# On active le module de réécriture
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^acceuil$ public/index.php 
+RewriteRule ^(.*)$ $1.php [NC,L] 

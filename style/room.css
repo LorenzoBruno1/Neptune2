@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito",sans-serif;
+}
+.welcometext-c{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.hero-c{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.rooms-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.room{
+    border: solid 1px grey;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 50px;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+}
+.kingbedimg{
+    padding: 10px;
+    height: 250px;
+}
+.room--text-title{
+    padding-block: 20px;
+}
+.room--pricing{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.room--pricing-btn,.room--pricing-avg{
+    padding-block: 10px;
+}
+.room--pricing-btn{
+    text-transform:uppercase ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius:10px ;
+    background-color: #66B2FF;
+    font-weight: bold;
+}

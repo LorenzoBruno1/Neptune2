@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito",sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.main-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-block: 40px;
+}
+.main--break{
+    margin-bottom: 60px;
+    width: 100%;
+}
+.main--hero{
+    margin-top: 60px;
+}
+form div{
+    margin-block: 40px;
+}
+.form-control{
+    color: #3399FF;
+    padding: 10px;
+    width: 425px;
+    height: 40px;
+}
+.main--button-connect{
+    height: 50px;
+    width: 425px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: #66B2FF;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.api-spacer{
+    margin-bottom: 20px;
+}
+.main--button-create{
+    margin-top: 40px;
+    height: 50px;
+    width: 425px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}

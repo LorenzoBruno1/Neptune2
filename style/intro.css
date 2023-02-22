@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+
+.text {
+max-height: 150px;
+position: relative;
+  color: white;
+  font-family: 'Righteous', serif;
+  font-size: 130px; 
+  text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+  margin-top: -50px;
+
+  }
+.text2{
+z-index: 10000;
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', serif;
+    font-size: 50px; 
+    text-shadow: .03em .03em 0 rgb(0, 0, 0);
+
+}
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
+  }

@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito",sans-serif;
+}
+.main--main{
+    object-fit:fill;
+    background-size: 100%;
+    background-image:url('../img/hotel3.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92.5vh;
+}
+.main--button{
+    margin: auto;
+    padding: 15px 40px;
+    background-color:#66B2FF ;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.hero-c{
+    min-height:20vh;
+    display: flex;
+    justify-content: center;
+}
+.form-group{
+    margin-top: 15vh;
+}
+.hero--start,.hero--end{
+    padding: 20px;
+}
+.hero--button{
+    padding: 20px 50px;
+    flex-wrap: wrap;
+    font-weight: 1000;
+    font-size: 20px;
+    background-color: #66B2FF;
+    margin-left: 2vw;
+    border-radius: 5px;
+    border: none;
+}
+.introduction-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.introduction--title{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+.introduction--text{
+    font-size: 1.5em;
+}
+.services-c{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center ;
+    margin-top: 12vh;
+}
+.service--title{
+    position: absolute;
+}
+.services--img-c{
+    padding-left:10vw;
+    width: 80%;
+}
+.service--img{
+    margin-top: 10vh;
+}
