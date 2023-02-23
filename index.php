@@ -35,7 +35,6 @@
             restaurant, une terrasse, une piscine.</p>
     </div>
     <div class="services-c">
-        <h1 class="service--title">Services et facilités</h1>
         <div class="services--img-c">
             <img src="./img/bed.png" alt="bed" class="service--img" height="200px">
             <img src="./img/breakfast.png" alt="bed" class="service--img" height="200px">
