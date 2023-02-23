@@ -19,7 +19,7 @@
     <div class="main-c">
         <div class="welcometext-c">
             <h1>Réserver la chambre qui vous plait !</h1>
-            <span>Une de nos plus grande priorité est de s'assurer que tout le monde soit bien acceuillis et mis a l'aise</span>
+            <span>Notre priorité est de s'assurer que tout le monde soit bien acceuillis et mis a l'aise</span>
         </div>
         <div class="rooms-c">
             <div class="room">
@@ -31,7 +31,7 @@
                 <div class="room--pricing">
                     <span class="room--pricing-price">€850</span>
                     <span class="room--pricing-avg">par/Nuit (EUR)</span>
-                    <span class="room--pricing-btn">Réserver</span>
+                    <span class="room--pricing-btn"><a href="./reservation.php">Select</a></span>
                 </div>
             </div>
             <div class="room">
@@ -43,7 +43,7 @@
                 <div class="room--pricing">
                     <span class="room--pricing-price">€925</span>
                     <span class="room--pricing-avg">par/Nuit (EUR)</span>
-                    <span class="room--pricing-btn">Select</span>
+                    <span class="room--pricing-btn"><a href="./reservation.php">Select</a></span>
                 </div>
             </div>
             <div class="room">
@@ -55,13 +55,14 @@
                 <div class="room--pricing">
                     <span class="room--pricing-price">€1000</span>
                     <span class="room--pricing-avg">par/Nuit (EUR)</span>
-                    <span class="room--pricing-btn">Select</span>
+                    <span class="room--pricing-btn"><a href="./reservation.php">Select</a></span>
                 </div>
             </div>
+            <span>voir plus</span>
         </div>
     </div>
     <?php
-        require("../components/footer.php")
+    require("../components/footer.php")
     ?>
 </body>
 

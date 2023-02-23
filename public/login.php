@@ -3,6 +3,7 @@ include "../functions/db_conn.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +15,10 @@ include "../functions/db_conn.php";
     <link rel="stylesheet" href="../style/login.css">
     <title>Acceuil</title>
 </head>
+
 <body>
     <?php
-        include '../components/navbar.php';
+    include '../components/navbar.php';
     ?>
     <div class="main-c">
         <div class="main--title">
@@ -45,4 +47,5 @@ include "../functions/db_conn.php";
         </div>
     </div>
 </body>
+
 </html>

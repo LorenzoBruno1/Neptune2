@@ -4,14 +4,16 @@
 session_start();
 
 # Formulaire d'inscription
-if (isset($_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["password"])
-AND !empty($_POST["firstname"]) AND !empty($_POST["lastname"]) AND !empty($_POST["email"]) AND !empty($_POST["password"])) {
+if (
+    isset($_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["password"])
+    and !empty($_POST["firstname"]) and !empty($_POST["lastname"]) and !empty($_POST["email"]) and !empty($_POST["password"])
+) {
     # Le formulaire est complet
     # On récupère les données de formulaires en désactivant les balises
     $firstname = htmlspecialchars($_POST['firstname']);
     $lastname = htmlspecialchars($_POST['lastname']);
     $email = htmlspecialchars($_POST['email']);
-    $password = password_hash($_POST['password'],PASSWORD_ARGON2ID);
+    $password = password_hash($_POST['password'], PASSWORD_ARGON2ID);
 
     # On se connecte à la base de données
     require_once "../functions/db_conn.php";
@@ -21,18 +23,18 @@ AND !empty($_POST["firstname"]) AND !empty($_POST["lastname"]) AND !empty($_POST
 
     # On exécute la requête pour récupérer les infos dans la base de données
     $recup->execute(array($email));
-    
+
     # On prepare la requête pour insérer les infos dans la base de données
     $insert = $db->prepare("INSERT INTO users(firstname, lastname, email, password) VALUES (?, ?, ?, ?)");
-    
-    if($recup->RowCount() == 0) {
+
+    if ($recup->RowCount() == 0) {
 
         # On exécute la requête pour insérer les infos dans la base de données
         $insert->execute(array($firstname, $lastname, $email, $password));
 
         # On exécute la requête pour récupérer les infos dans la base de données
         $recup->execute(array($email));
-        while ($session = $recup->fetch()){ 
+        while ($session = $recup->fetch()) {
             # On lui créé sa session avec le nom de son ID
             $_SESSION['email'] = $email;
             $_SESSION['firstname'] = $firstname;
@@ -41,8 +43,7 @@ AND !empty($_POST["firstname"]) AND !empty($_POST["lastname"]) AND !empty($_POST
             $_SESSION['admin'] = $session['isAdmin'];
         }
         header('Location: ./ ');
-    }
-    else {
+    } else {
         # L'adresse email existe deja
         die("You have already an account with this email address");
     }
@@ -51,6 +52,7 @@ AND !empty($_POST["firstname"]) AND !empty($_POST["lastname"]) AND !empty($_POST
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -61,10 +63,11 @@ AND !empty($_POST["firstname"]) AND !empty($_POST["lastname"]) AND !empty($_POST
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <title>Créer un compte</title>
 </head>
+
 <body>
-<?php
-    include ('../components/navbar.php');
-?>
+    <?php
+    include('../components/navbar.php');
+    ?>
     <div class="main-c">
         <div class="main--title">
             <h1>Créer un compte</h1>
@@ -88,9 +91,10 @@ AND !empty($_POST["firstname"]) AND !empty($_POST["lastname"]) AND !empty($_POST
                 </div>
             </form>
             <hr class="api-spacer">
-                <p class="connecter-create">Vous avez déja un compte ?</p>
-                <button class="main--button-create"><a href="./login">Se connecter</a></button>
+            <p class="connecter-create">Vous avez déja un compte ?</p>
+            <button class="main--button-create"><a href="./login">Se connecter</a></button>
         </div>
     </div>
 </body>
+
 </html>

@@ -1,29 +1,37 @@
 <footer class="footer-c">
     <style>
-        li{
+        li {
             list-style-type: none;
         }
-        .footer--main-c{
+
+        .footer--main-c {
             display: flex;
             margin-top: 10%;
             height: 80%;
-            background-color:#66B2FF;
+            background-color: #66B2FF;
             justify-content: space-around;
         }
-        .content-c-one,.content-c-two{
-            padding:5%;
+
+        .content-c-one,
+        .content-c-two {
+            padding: 5%;
         }
-        .content-c-two{
+
+        .content-c-two {
             display: flex;
             flex-direction: column;
         }
-        .neptune,.contact,.payement,.reseaux{
-            padding:10px;
-        }
-        .payement{
-            margin-top:15%;
+
+        .neptune,
+        .contact,
+        .payement,
+        .reseaux {
+            padding: 10px;
         }
 
+        .payement {
+            margin-top: 15%;
+        }
     </style>
     <div class="footer--main-c">
         <div class="content-c-one">
@@ -40,8 +48,8 @@
                 <li>Email:Neptune@exemple.fr</li>
                 <li>Télephone:0603******</li>
             </div>
-            </div>
-            <div class="content-c-two">
+        </div>
+        <div class="content-c-two">
             <div class="reseaux">
                 <h3>Nos réseaux sociaux</h3>
                 <img src="../img/facebook.svg" alt="facebook" height="40px">
@@ -56,6 +64,6 @@
                 <img src="../img/master-card.svg" alt="visa" height="40px">
                 <img src="../img/paypal.svg" alt="visa" height="40px">
             </div>
-            </div>
+        </div>
     </div>
 </footer>

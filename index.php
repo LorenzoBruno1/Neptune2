@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <title>Acceuil</title>
 </head>
+
 <body>
     <?php
-        include "./components/navbar.php";
+    include "./components/navbar.php";
     ?>
     <div class="main--main">
         <button class="main--button"><a href="./public/room.php">Réserver</a></button>
@@ -34,7 +36,7 @@
     </div>
     <div class="services-c">
         <h1 class="service--title">Services et facilités</h1>
-    <div class="services--img-c">
+        <div class="services--img-c">
             <img src="./img/bed.png" alt="bed" class="service--img" height="200px">
             <img src="./img/breakfast.png" alt="bed" class="service--img" height="200px">
             <img src="./img/buisnesscenter.png" alt="bed" class="service--img" height="200px">
@@ -45,12 +47,12 @@
             <img src="./img/kitchenette.png" alt="bed" class="service--img" height="200px">
             <img src="./img/pool.png" alt="bed" class="service--img" height="200px">
             <img src="./img/wifi.png" alt="bed" class="service--img" height="200px">
-    </div>   
-</div>
-<?php
-        include('./components/footer.php')    
-    ?> 
-</div>
+        </div>
+    </div>
+    <?php
+    include('./components/footer.php')
+    ?>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Nunito",sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.reservation--main-c{
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    justify-content: center;
+}
+.reservation--mid-c{
+    display: flex;
+    background-color: #ecf0f1;
+    margin-top: 10vh;
+    height: 100vh;
+    width: 60%;
+}
+.reservation-left-side{
+    display: flex;
+    flex-direction: column;
+}
+.reservation--room{
+    display: flex;
+    background-color: white;
+    height: 20vh;
+    width: 30vw;
+    margin-top:10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.reservation--room-img{
+    object-fit: fill;
+    margin:17px 10px ;
+    height: 150px;
+}
+.reservation--room-desc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.reservation--room-nbrchamre{
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+.reservation--contactinfo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.reservation--contactinfo{
+    height: 55vh;
+    width: 30vw;
+    margin-top:10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.form-control{
+    color: #3399FF;
+    padding: 10px;
+    width: 425px;
+    height: 40px;
+    padding-inline: 15px;
+}
+.form-group{
+    padding-block: 15px;
+}
+.main--button-connect{
+    height: 50px;
+    width: 400px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: #66B2FF;
+    color:white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.reservation--payement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 20vh;
+    width: 30vw;
+    margin-top:10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.form-control-card{
+    height: 40px;
+    width: 400px;
+    padding: 20px;
+}
+.form-group-payement-infos{
+    margin-top: 20px;
+}
+.form-control-card-infos{
+    height: 40px;
+    width: 200px;
+}
+.reservation--payement-text{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.reservation-right-side{
+    display: flex;
+    flex-direction: column;
+}
+.reservation-terms{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 20vh;
+    width: 25vw;
+    margin-top:10px;
+    margin-left: 35px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.reservation-terms-title{
+    margin-bottom: 70px;
+}
+.reservation-terms-txt{
+    font-size:12px;
+}
+.reservation-right-side-summary{
+    background-color: white;
+    height: 30vh;
+    width: 25vw;
+    margin-top:10px;
+    margin-left: 35px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.reservation-right-side-summary-price,.reservation-right-side-summary-taxes,.reservation-right-side-summary-total{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.reservation-right-side-summary-text{
+    font-size: 12px;
+}
