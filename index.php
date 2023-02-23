@@ -6,25 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <title>Acceuil</title>
+    <title>Neptune,Carnon</title>
 </head>
 
 <body>
     <?php
     include "./components/navbar.php";
     ?>
-    <div class="main--main">
-        <button class="main--button"><a href="./public/room.php">Réserver</a></button>
-    </div>
+    <div class="main--c">
+    <div class="slidepage-c">
+            <img src="../img/hotel4.jpg" alt="hotel" class="slidepage--img">
+            <img src="../img/hotel2.jpg" alt="hotel" class="slidepage--img">
+            <img src="../img/hotel6.jpg" alt="hotel" class="slidepage--img">
+            <img src="../img/hotel7.jpg" alt="hotel" class="slidepage--img">
+            <img src="../img/hotel3.jpg" alt="hotel" class="slidepage--img">
+        </div>
     <div class="hero-c">
         <form action="" method="post">
             <div class="form-group">
                 <span>Arrivé : </span><input type="date" name="start-date" class="hero--start">
                 <span>Départ : </span><input type="date" name="end-date" class="hero--end">
-                <button class="hero--button">Réserver</button>
+                <button class="hero--button"><a href="./public/room.php">Réserver</a></button>
             </div>
         </form>
     </div>
@@ -51,6 +63,7 @@
     <?php
     include('./components/footer.php')
     ?>
+    </div>
     </div>
 </body>
 

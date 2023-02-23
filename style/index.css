@@ -4,19 +4,42 @@
     box-sizing: border-box;
     font-family: "Nunito",sans-serif;
 }
-.main--main{
-    object-fit:fill;
-    background-size: 100%;
-    background-image:url('../img/hotel3.jpg');
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slidepage-c{
     height: 92.5vh;
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    
+}
+.slidepage--img{
+    animation-duration: 15s;
+    animation-name: slider;
+    animation-delay: 2s;
+    animation-iteration-count:infinite;
+    min-width: 100%;
+    object-fit:cover;
+}
+@keyframes slider{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100vw);
+    }
+    50%{
+        transform: translateX(-200vw);
+    }
+    75%{
+        transform: translateX(-300vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 .main--button{
     margin: auto;
     padding: 15px 40px;
-    background-color:#66B2FF ;
+    background-color:#66B2FF;
     border-radius: 5px;
     cursor: pointer;
     border: none;
